@@ -1,0 +1,304 @@
+/* Global Rules  */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    
+}
+
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 2000px;
+    background-color:rgb(255, 255, 255);
+}
+.r{
+    float: right;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* End Global Rules  */
+ 
+.container .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.container .content .articles{
+     width: 70%;
+}
+.container .content .aside_widgets{
+     width: 30%;
+     /* background-color: #F7F7F7; */
+     height: 100vh;
+     padding: 20px;
+}
+
+
+.container .content .articles .article {
+    display: flex;
+    background-color: #f9f9f9;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    max-height: 300px;
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 5px 2px #0000000f;
+    overflow: hidden;
+}
+.container .content .articles .pagination  {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content .articles .pagination span  {
+   width: 40px;
+   height: 40px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.now{
+    background-color: rgb(255, 74, 42);
+    color: white;
+}
+.container .content .articles .article .img_container{
+    min-width: 300px;
+    background-color: black;
+    
+}
+.container .content .articles .article .img_container img{
+    width: 100%;
+    min-height: 100%;
+    display: block;
+}
+.container .content .articles .article .body {
+    width: auto;
+    padding: 20px;
+   
+}
+.container .content .articles .article .body h3 {
+    font-style: italic;
+    font-family: initial;
+   
+}
+.container .content .articles .article .body .details span {
+   font-size: 14px;
+   
+}
+.container .content .articles .article .body .details span i {
+   margin: 0 5px;
+   color: lightcoral;
+   
+}
+.container .content .articles .article .body p {
+  color: #888;
+}
+.container .content .articles .article .body a {
+  text-decoration: none;
+  color: rgb(241, 80, 80);
+  font-weight: bold;
+}
+
+.container .content .aside_widgets .search_inp{
+    position: relative;
+    border: 2px solid #d8d8d8;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container .content .aside_widgets .search_inp input{
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    display: block;
+    outline: none;
+    border: none;
+   
+}
+.widget{
+    width: 100%;
+    /* background-color: rgb(86, 221, 127); */
+    margin: auto;
+}
+.container .content .aside_widgets .search_inp i{
+    position: absolute;
+    right: 14px;
+    top: 11px;
+    font-size: 21px;
+    color:#d8d8d8 ;
+}
+.aside_widgets  h3{
+    font-style: italic;
+    font-family: initial;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    font-size: 24px;
+}
+.container .content .aside_widgets .categories ul li{
+    padding: 5px 0;
+    font-weight: 400;
+    color: #888;
+}
+.container .content .aside_widgets .categories ul li i{
+  margin-right: 10px;
+  
+}
+.container .content .aside_widgets .categories ul li span{
+   float: right;
+   /* margin-right: 30px; */
+  
+}
+.recent_posts .widget_body .post{
+    display: flex;
+    overflow: hidden;
+    /* background-color: lightgreen; */
+    /* max-height: 100px; */
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.recent_posts .widget_body .post h4{
+    margin: 0ch;
+    font-style: italic;
+    font-family: initial;
+}
+.recent_posts .widget_body .post .img_container{
+    background-color: lightgray;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 20px;
+   
+}
+.recent_posts .widget_body .post .body{
+    /* background-color: lightgray; */
+    width: auto;
+    padding: 10px;
+    
+}
+.recent_posts .widget_body .post .body .details{
+    /* background-color: lightgray; */
+    font-size: 13px;
+    margin-top: 10px;
+    
+}
+.recent_posts .widget_body .post .body .details i{
+    /* background-color: lightgray; */
+    margin-right: 10px;
+    color: rgb(219, 69, 58);
+    
+}
+.special_offer{
+    background-color: black;
+    height: 300px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.special_offer h4{
+    overflow: hidden;
+    margin: 0;
+    font-size: 43px;font-style: italic;
+}
+.special_offer h4 >span{
+    overflow: hidden;
+    /* margin: 0; */
+    font-size: 43px;font-style: italic;
+    color: rgb(214, 32, 0);
+}
+.special_offer > span{
+    display: block;
+    margin-top: 20px;
+}
+.special_offer > a{
+    background-color: rgb(201, 30, 0);
+    display: inline-block;
+    padding: 15px ;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 1px 4px 1px #7b281a;
+}
+
+.widget_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.widget_grid .img_container{
+    width: 30%;
+    height: 90px;
+    background-color: violet;
+    margin-bottom: 15px;
+}
+.tags_widget> span{
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 3px;
+    display: inline-block;
+    font-size: 13px;
+    
+}
+/* 
+        Devices : MobilePhones & Tablets width low resolution. 
+        Width   : Under 767px. 
+*/
+@media(max-width:767px){}
+
+
+/* 
+        Devices : Tablets  and small screen laptops
+        Width   : between 768px and 992px 
+*/
+@media(min-width:768px){}
+
+
+/* 
+        Devices : laptops with medium screen sizes.
+        Width   : between 992px and 1200px. 
+*/
+@media(min-width:992px){}
+
+
+/* 
+        Devices : large and extra large screens.
+        Width   : starts from 1200px without any breakpoint to stop in.
+*/
+@media(min-width:1200px){}
+
+
+
+
+/* container  default */
+.container{
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+}
+
+ /* container for small screens */
+ @media(min-width:768px){
+        .container{ width: 750px }
+ }
+
+ /* container for medium screens */
+ @media(min-width:992px){
+        .container{ width: 970px }
+ }
+
+ /* container for large and extra large screens */
+ @media(min-width:992px){
+        .container{ width: 1170px }
+ }
